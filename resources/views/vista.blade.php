@@ -47,10 +47,10 @@
                                         <ul class="uk-nav uk-nav-dropdown">
 
                                             <li><a href="{{ url('account/edit-profile') }}"><i class="uk-icon-eye"></i> Editar Perfil</a></li>
-                                              <li><a href="{{ url('account/edit-profile') }}"><i class="uk-icon-eye"></i> Cambiar Password</a></li>
+                                              <li><a href="{{ url('account/password') }}"><i class="uk-icon-eye"></i> Cam Password</a></li>
       
                                             <li class="uk-nav-divider"></li>
-                                            <li><a href=""><i class="uk-icon-sign-in"></i> Salir</a></li>
+                                            <li><a href="{{ route('logout') }}"><i class="uk-icon-sign-in"></i> Salir</a></li>
                                         </ul>
                                     </div>
                                 </div>

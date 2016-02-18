@@ -4,8 +4,10 @@
 
                 @include('partials/success')
 
-                        <h1>Laravel 5</h1>
-                        <p>Welcome to our site!</p>
-        
-    </div>
+
+                <div class="uk-grid">
+                    <div class="uk-width-1-2">Sistema web desarrollado bajo ambiente linux</div>
+                    <div class="uk-width-1-2">imagen o algo mas</div>
+                </div>
+
 @endsection

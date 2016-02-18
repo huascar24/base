@@ -1,56 +1,36 @@
 @extends('layout')
 
 @section('content')
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-                <div class="panel panel-default">
-                    <div class="panel-heading">Change your password</div>
-                    <div class="panel-body">
 
-                        @include('partials/errors')
-                        @include('partials/success')
+    <div class="uk-container">
+        <div class="uk-panel">
+            <div class="panel-body">
+                @include('partials/errors')
+                @include('partials/success')
+            </div>
+            <fieldset data-uk-margin>
+                <legend>Actualizar Contraseña</legend>
 
-                        <form class="form-horizontal" method="POST" action="{{ url('account/password') }}">
 
-                            {!! csrf_field() !!}
+            <form class="uk-form" method="POST" action="{{ url('account/password')  }}">
+                      {!! csrf_field() !!}
 
-                            <div class="form-group">
-                                <label class="col-md-4 control-label">@lang('passwords.reset.current_password')</label>
 
-                                <div class="col-md-6">
-                                    <input type="text" class="form-control" name="current_password">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label class="col-md-4 control-label">@lang('passwords.reset.new_password')</label>
-
-                                <div class="col-md-6">
-                                    <input type="text" class="form-control" name="password">
-                                </div>
-
-                            </div>
-                            <div class="form-group">
-                                <label class="col-md-4 control-label">@lang('passwords.reset.password_confirmation')</label>
-
-                                <div class="col-md-6">
-                                    <input type="text" class="form-control" name="password_confirmation">
-                                </div>
-
-                            </div>
-
-                            <div class="form-group">
-                                <div class="col-md-6 col-md-offset-4">
-                                    <button type="submit" class="btn btn-primary" style="margin-right: 15px;">
-                                        @lang('passwords.reset.change_button')
-                                    </button>
-                                </div>
-                            </div>
-
+                <table >
+                    <tr>
+                    <th>Contraseña Actual</th><td><input type="text" class="form-control" name="current_password"></td>
+                    </tr>
+                    <tr><th>Nueva Contraseña</th><td><input type="text" class="form-control" name="password"></td></tr>
+                    <tr><th>Comfirma tu Contrseña</th><td><input type="text" class="form-control" name="password_confirmation"></td></tr>
+                    <tr>
+                        <td><button type="submit" class="uk-button uk-button-primary">
+                                Registrar
+                            </button></td>
+                        <td><button type="reset" name="limpiar" class="uk-button uk-button-success"> Limpiar</button></td>
+                    </tr>
+                </table>
                         </form>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
+
 @endsection

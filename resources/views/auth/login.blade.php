@@ -1,15 +1,22 @@
 @extends('layout')
 
 @section('content')
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-                <div class="panel panel-default">
-                    <div class="panel-heading">Inicio de sesión</div>
-                    <div class="panel-body">
-                        @include('partials/errors')
-                        @include('partials/success')
+    <div class="uk-container">
+        <div class="uk-panel">
+            <div class="panel-body">
+                @include('partials/errors')
+                @include('partials/success')
+            </div>
 
+            <div class="uk-grid">
+                <div class="uk-width-1-2">Sistema web desarrollado bajo ambiente linux</div>
+
+
+
+
+                            <div class="uk-width-1-2">
+                                <fieldset data-uk-margin>
+                                    <legend>Editar Usuario</legend>
                         <form class="uk-form" role="form" method="POST" action="{{ route('login') }}">
                             <input type="hidden" name="_token" value="{{ csrf_token() }}">
                             <table>
@@ -31,5 +38,9 @@
                             </tr>
                         </table>
                        </form>
+            </fieldset>
                      </div>
+                    </div>
+    </div>
+    </div>
 @endsection
