@@ -7,7 +7,7 @@ Documentation for the framework can be found on the [Laravel website](http://lar
  - Cambio de Contraseña
  - Recuperar contraseña por email
  - Middleware con 3 roles de usuarios
-## INSTALACION
+## Instalacion
  - git clone https://github.com/huascar24/base.git
  - configurar el .env   renombrar .env.example y configurar los datos de conexión a la bd
  - configurar en .env los datos para el envío de email de recordar contraseña:
