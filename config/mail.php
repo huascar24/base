@@ -15,7 +15,7 @@ return [
     |
     */
 
-    'driver' => env('MAIL_DRIVER', 'log'),
+    'driver' => env('MAIL_DRIVER', 'smtp'),
 
     /*
     |--------------------------------------------------------------------------
@@ -28,7 +28,7 @@ return [
     |
     */
 
-    'host' => env('MAIL_HOST', 'smtp.mailgun.org'),
+    'host' => env('MAIL_HOST', 'smtp.gmail.com'),
 
     /*
     |--------------------------------------------------------------------------
@@ -54,7 +54,7 @@ return [
     |
     */
 
-    'from' => ['address' => 'noreply@styde.net', 'name' => 'Styde.net'],
+    'from' => ['address' => 'terminatorhc@gmail.com', 'name' => 'prueba'],
 
     /*
     |--------------------------------------------------------------------------
@@ -79,6 +79,7 @@ return [
     | connection. You may also set the "password" value below this one.
     |
     */
+    //'username' => 'huascarcoello',
 
     'username' => env('MAIL_USERNAME'),
 
@@ -92,7 +93,7 @@ return [
     | connection so that the application will be able to send messages.
     |
     */
-
+    //'password' => 'hj1761984',
     'password' => env('MAIL_PASSWORD'),
 
     /*
