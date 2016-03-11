@@ -79,7 +79,7 @@ return [
     | connection. You may also set the "password" value below this one.
     |
     */
-    //'username' => 'huascarcoello',
+
 
     'username' => env('MAIL_USERNAME'),
 
@@ -93,7 +93,7 @@ return [
     | connection so that the application will be able to send messages.
     |
     */
-    //'password' => 'hj1761984',
+   
     'password' => env('MAIL_PASSWORD'),
 
     /*
